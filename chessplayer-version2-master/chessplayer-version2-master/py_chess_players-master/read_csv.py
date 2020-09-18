@@ -9,7 +9,7 @@ def read_csv(file):
     :return: object list
     """
     data = []
-    # with open ('chess-players.csv', encoding = "utf-8")as csv_file:
+    # open csv file and read each lines, lines are seperated with comma
     with open(file, encoding="utf-8", mode='r')as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         line_count = 0
