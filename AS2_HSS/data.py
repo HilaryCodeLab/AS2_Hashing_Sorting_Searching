@@ -1,5 +1,4 @@
 
-
 data = [36, 29, 31, 125, 139, 131, 115, 105, 111, 40, 119, 47, 105, 57, 122, 109, 124, 115, 43, 120, 43, 27, 27, 32, 61, 37,
         127, 29, 113, 121, 58, 114, 126, 53, 114, 96, 12, 127, 28, 42, 39, 113, 42, 18, 44, 18, 28, 48, 125, 107, 114, 34, 133,
         45, 120, 30, 127, 31, 116, 146, 58, 109, 23, 105, 63, 27, 44, 105, 99, 41, 128, 121, 116, 125, 118, 44, 37, 113, 124,
@@ -47,12 +46,6 @@ def print_list(array):
         print(array[i], end=" ")
     print()
 
-    # driver code to test the above code
-
-
-def hash_key(m, key):
-    return key % m
-
 
 # It returns location of x in given array arr
 # if present, else returns -1
@@ -77,22 +70,6 @@ def binary_search(array, left, right, key):
     # was not present
     return -1
 
-
-if __name__ == '__main__':
-    # arr = [12, 11, 13, 5, 6, 7]
-    print("Given array is", end="\n")
-    print_list(data)
-    merge_sort(data)
-    print("Sorted array is: ", end="\n")
-    print_list(data)
-    print("The data list size: %d " % len(data))
-    # Driver Code
-    result = binary_search(data, 0, len(data)-1, 121)
-    # Function call
-    if result != -1:
-        print("Element is present at index % d" % result)
-    else:
-        print("Element is not present in array")
 
 
 

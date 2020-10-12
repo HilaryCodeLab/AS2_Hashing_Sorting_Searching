@@ -12,4 +12,11 @@ if __name__ == '__main__':
         key = table.hash_function(item)
         table.insert(table.hash_table, key, item)
     print(table)
+    # Driver Code
+    result = dt.binary_search(dt.data, 0, len(dt.data) - 1, 121)
+    # Function call
+    if result != -1:
+        print("Element is present at index % d" % result)
+    else:
+        print("Element is not present in array")
 
